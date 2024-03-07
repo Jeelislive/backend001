@@ -1,40 +1,20 @@
 {
-  "build": {
-    "functions": {
-      "api/**/*.js": {
-        "runtime": "nodejs14.x"
-      }
-    }
-  },
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs14.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "./bin/www"
-    }
-  ]
-}
-{
-  "build": {
-    "functions": {
-      "api/**/*.js": {
-        "runtime": "nodejs14.x"
-      }
-    }
-  },
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs14.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "./bin/www"
-    }
-  ]
+	"build": {
+		"functions": {
+			"api/**/*.js": {
+				"runtime": "nodejs14.x"
+			}
+		}
+	},
+	"functions": {
+		"api/**/*.js": {
+			"runtime": "nodejs14.x"
+		}
+	},
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "./bin/www"
+		}
+	]
 }
