@@ -1,9 +1,40 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "./bin/www --inspect index.js", "use": "@vercel/node" }
-  ],
+  "build": {
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "nodejs14.x"
+      }
+    }
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs14.x"
+    }
+  },
   "routes": [
-    { "src": "/(.*)", "dest": "/" }
+    {
+      "src": "/(.*)",
+      "dest": "./bin/www"
+    }
+  ]
+}
+{
+  "build": {
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "nodejs14.x"
+      }
+    }
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs14.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "./bin/www"
+    }
   ]
 }
