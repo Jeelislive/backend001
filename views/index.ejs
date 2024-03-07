@@ -68,16 +68,16 @@
     <form action="/register" method="post">
       <div class="mb-3">
         <label for="exampleInputUsername" class="form-label">Username</label>
-        <input name="username" type="text" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
+        <input name="username" required="text" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+        <input name="password" type="password" required class="form-control" id="exampleInputPassword1">
       </div>
       <div class="mb-3">
-        <label for="exampleInputSecret" class="form-label">Secret</label>
-        <input name="secret" type="text" class="form-control" id="exampleInputSecret">
+        <label for="exampleInputSecret" class="form-label">Email</label>
+        <input name="secret" type="text" required class="form-control" id="exampleInputSecret">
       </div>
       
       <h6>Have you an account? <a href="/login">Login</a></h6>
